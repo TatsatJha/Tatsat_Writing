@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "Montserrat": ['Montserrat']
+        "Montserrat": ['Montserrat'],
+        "Space-Mono": ['Space Mono']
       },
       keyframes: {
         fadeUp: {

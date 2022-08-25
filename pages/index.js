@@ -15,7 +15,7 @@ export default function Home() {
   const executeScroll = () => myRef.current.scrollIntoView()   
 
   return (
-    <div className='font-Montserrat'>
+    <div className='font-Montserrat bg-slate-100'>
 
         <div className='flex justify-between'>
 
@@ -40,13 +40,13 @@ export default function Home() {
         
         </div>
 
-        <div className="absolute mt-32 right-32 text-slate-700  w-[40%]">
+        <div className="absolute mt-32 right-32 text-slate-700  w-[45%]">
 
           <h2 className='text-5xl font-bold pb-4 tracking-wider leading-[72px]'>
             Professional Written Material for <span className='text-blue-700'>   Tech Companies </span> 
           </h2>
 
-          <h3 className='text-2xl tracking-wider leading-8'>
+          <h3 className='text-2xl tracking-wider leading-8 font-Space-Mono'>
             Take your <span className='text-blue-700 font-bold'> Software </span> to the <span className="text-amber-500 font-bold"> next level </span> with  <span className='text-amber-500 font-bold'>high-end, accurate</span>  documentation and articles</h3>
 
           <Link href={"/contact"}>
@@ -57,10 +57,8 @@ export default function Home() {
 
         </div>
       
-
       <div>
-
-        <h2 className='text-3xl p-12 text-center mt-[720px]'>
+        <h2 className='text-3xl p-12 text-center mt-[900px]'>
           Testimonials
         </h2>
 
@@ -79,9 +77,31 @@ export default function Home() {
             Facteus, Inc.
           </div>
         </div>
-
       </div>
+
+      <div className='absolute right-24 py-24 animate-fadeUp align-middle'>
+        <img className = "right-12 ml-auto mr-auto" src="/press.jpeg"></img>
+        <Image className='' height = {148.8} width={450} src="/facteus.png"></Image>
+      </div>
+
+      <div className="mx-32 text-slate-700 w-[50%] py-32">
+        <h2 className='text-5xl font-bold pb-4 tracking-wider leading-[72px]'>
+        <span className='text-amber-500'>Trusted</span> by Enterprise-Scale <span className='text-blue-700'>Data Companies</span> and Professional <span className='text-blue-700'>Writing Agencies</span>
+        </h2>
+
+        <h3 className='text-2xl tracking-wider leading-8 font-Space-Mono py-12'>
+          Reach out via Email or LinkedIn to bring your <span className='text-blue-700'>Tech</span> to the <span className='text-amber-500'>next level</span>.
+        </h3>
+
+        <Link href={"/contact"}>
+            <button className='border-2 rounded-lg border-emerald-500 text-emerald-500 p-4 px-16 text-2xl shadow-xl'>
+              Contact Now
+            </button>
+          </Link>
+      </div>
+
       
+
     </div>
 
 
